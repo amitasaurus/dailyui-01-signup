@@ -1,0 +1,71 @@
+@import "../../variables";
+
+.form {
+    width: 80%;
+    height: 80%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.splitscreen {
+    display: flex;
+    height: 100%;
+    &--left {
+        width: 50%;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("../../Tsomgo Lake.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 32px 64px;
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
+        .heading {
+            font-family: $heading-font;
+            font-size: 48px;
+            text-align: left;
+        }
+        .sub-heading {
+            font-family: $body-font;
+            font-size: 20px;
+            text-align: left;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .footer-links {
+            margin-top: auto;
+            display: flex;
+            justify-content: flex-end;
+            .link {
+                font-family: $body-font;
+                font-size: 16px;
+                color: $brand;
+                margin-left: 8px;
+                margin-right: 8px;
+                cursor: pointer;
+            }
+        }
+    }
+    &--right {
+        width: 50%;
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .mdc-text-field {
+            width: 100%;
+        }
+        .custom-input {
+            margin-bottom: 24px;
+            font-family: $body-font;
+        }
+        .footer {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            margin-top: 24px;
+        }
+    }
+}
