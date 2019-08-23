@@ -8,54 +8,27 @@ class CustomInput extends Component {
         }`;
     }
     render() {
-        let customInput;
-        if (this.props.type === "textarea") {
-            customInput = (
-                <div className="mdc-text-field mdc-text-field--textarea">
-                    <textarea
-                        id="textarea"
-                        className="mdc-text-field__input"
-                        rows="8"
-                        cols="40"
-                    />
-                    <div className="mdc-notched-outline">
-                        <div className="mdc-notched-outline__leading" />
-                        <div className="mdc-notched-outline__notch">
-                            <label
-                                htmlFor="textarea"
-                                className="mdc-floating-label"
-                            >
-                                {this.props.label}
-                            </label>
-                        </div>
-                        <div className="mdc-notched-outline__trailing" />
+        return (
+            <div className={this.getClass(this.props)}>
+                <input
+                    type={this.props.type}
+                    id="tf-outlined"
+                    className="mdc-text-field__input"
+                />
+                <div className="mdc-notched-outline">
+                    <div className="mdc-notched-outline__leading" />
+                    <div className="mdc-notched-outline__notch">
+                        <label
+                            htmlFor="tf-outlined"
+                            className="mdc-floating-label"
+                        >
+                            {this.props.label}
+                        </label>
                     </div>
+                    <div className="mdc-notched-outline__trailing" />
                 </div>
-            );
-        } else {
-            customInput = (
-                <div className={this.getClass(this.props)}>
-                    <input
-                        type={this.props.type}
-                        id="tf-outlined"
-                        className="mdc-text-field__input"
-                    />
-                    <div className="mdc-notched-outline">
-                        <div className="mdc-notched-outline__leading" />
-                        <div className="mdc-notched-outline__notch">
-                            <label
-                                htmlFor="tf-outlined"
-                                className="mdc-floating-label"
-                            >
-                                {this.props.label}
-                            </label>
-                        </div>
-                        <div className="mdc-notched-outline__trailing" />
-                    </div>
-                </div>
-            );
-        }
-        return customInput;
+            </div>
+        );
     }
 }
 

@@ -44,8 +44,8 @@ class Form extends Component {
                             customClass="custom-input"
                         />
                         <CustomInput
-                            label="Your Query"
-                            type="textarea"
+                            label="Password"
+                            type="password"
                             customClass="custom-input"
                         />
                         <div className="footer">
