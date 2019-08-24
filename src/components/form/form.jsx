@@ -36,17 +36,20 @@ class Form extends Component {
                         <CustomInput
                             label="Your Name"
                             type="text"
-                            customClass="custom-input"
+                            customclass="custom-input"
+                            id="username"
                         />
                         <CustomInput
                             label="Your Email"
                             type="email"
-                            customClass="custom-input"
+                            customclass="custom-input"
+                            id="signup__email"
                         />
                         <CustomInput
                             label="Password"
                             type="password"
-                            customClass="custom-input"
+                            customclass="custom-input"
+                            id="signup__password"
                         />
                         <div className="footer">
                             <button type="button">Submit</button>

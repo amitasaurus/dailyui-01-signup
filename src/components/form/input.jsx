@@ -4,17 +4,13 @@ class CustomInput extends Component {
     state = {};
     getClass(props) {
         return `mdc-text-field mdc-text-field--outlined ${
-            props.customClass ? props.customClass : ""
+            props.customclass ? props.customclass : ""
         }`;
     }
     render() {
         return (
             <div className={this.getClass(this.props)}>
-                <input
-                    type={this.props.type}
-                    id="tf-outlined"
-                    className="mdc-text-field__input"
-                />
+                <input className="mdc-text-field__input" {...this.props} />
                 <div className="mdc-notched-outline">
                     <div className="mdc-notched-outline__leading" />
                     <div className="mdc-notched-outline__notch">
