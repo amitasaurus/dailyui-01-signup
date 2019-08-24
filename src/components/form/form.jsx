@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./form.scss";
 import "@material/textfield/mdc-text-field.scss";
 import { MDCTextField } from "@material/textfield";
-import CustomInput from "./input";
+import Basic from "./basic";
 
 class Form extends Component {
     state = {};
@@ -13,13 +13,7 @@ class Form extends Component {
     }
     render() {
         return (
-            <form className="form" name="signupForm" autoComplete="off">
-                <input
-                    autoComplete="false"
-                    name="hidden"
-                    type="text"
-                    style={{ display: "none" }}
-                />
+            <div className="form">
                 <div className="splitscreen">
                     <div className="splitscreen--left">
                         <div className="heading">Experience Sikkim</div>
@@ -33,30 +27,10 @@ class Form extends Component {
                         </div>
                     </div>
                     <div className="splitscreen--right">
-                        <CustomInput
-                            label="Your Name"
-                            type="text"
-                            customclass="custom-input"
-                            id="username"
-                        />
-                        <CustomInput
-                            label="Your Email"
-                            type="email"
-                            customclass="custom-input"
-                            id="signup__email"
-                        />
-                        <CustomInput
-                            label="Password"
-                            type="password"
-                            customclass="custom-input"
-                            id="signup__password"
-                        />
-                        <div className="footer">
-                            <button type="button">Submit</button>
-                        </div>
+                        <Basic />
                     </div>
                 </div>
-            </form>
+            </div>
         );
     }
 }
