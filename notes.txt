@@ -1,0 +1,8 @@
+Handling Forms in React:
+https://hackernoon.com/react-form-validation-with-formik-and-yup-8b76bda62e10
+https://medium.com/@rossbulat/introduction-to-yup-object-validation-in-react-9863af93dc0e
+https://medium.com/@agoiabeladeyemi/the-complete-guide-to-forms-in-react-d2ba93f32825
+https://flaviocopes.com/react-forms/
+
+https://codesandbox.io/s/handlingform-in-react-1-eml81
+https://codesandbox.io/s/handlingform-in-react-2-pdetz
